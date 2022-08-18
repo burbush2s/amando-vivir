@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "amando-vivir"
-  }
+  },
+  "targets": {
+    "amando-vivir": {
+      "hosting": {
+        "blog": [
+          "amando-vivir"
+        ],
+        "app": [
+          "amando-vivir-admin"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

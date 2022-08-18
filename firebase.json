@@ -1,16 +1,41 @@
 {
-  "hosting": {
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [ {
+      "target": "blog",  
+      "public": "blog/public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },{
+      "target": "app",
+      "public": "app/public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "redirects": [ {
+        "source": "/foo",
+        "destination": "/bar",
+        "type": 301
+      }, {
+        "source": "/blog",
+        "destination": "https://amando-vivir.web.app",
+        "type": 302
+      } ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/404.html"
+        }
+      ]
+    }
+  ]
 }
