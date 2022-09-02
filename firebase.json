@@ -1,19 +1,66 @@
 {
-  "hosting": [ {
-      "target": "blog",  
+  "hosting": [
+    {
+      "target": "blog",
       "public": "blog/public",
       "ignore": [
         "firebase.json",
         "**/.*",
         "**/node_modules/**"
       ],
+      "i18n": {
+        "root": "/internationalization-files"
+      },
+      "redirects": [
+        {
+          "source": "/app",
+          "destination": "https://amando-vivir-admin.web.app",
+          "type": 302
+        }
+      ],
       "rewrites": [
         {
-          "source": "**",
+          "source": "/expresion",
+          "function": "expresion",
+          "region": "us-central1"
+        },
+        {
+          "source": "/blogEntry",
+          "function": "blogEntry",
+          "region": "us-central1"
+        },
+        {
+          "source": "/blog",
           "destination": "/index.html"
+        },
+        {
+          "source": "**",
+          "destination": "/404.html"
         }
-      ]
-    },{
+      ],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=7200"
+            }
+          ]
+        },
+        {
+          "source": "404.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=300"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true
+    },
+    {
       "target": "app",
       "public": "app/public",
       "ignore": [
@@ -21,21 +68,55 @@
         "**/.*",
         "**/node_modules/**"
       ],
-      "redirects": [ {
-        "source": "/foo",
-        "destination": "/bar",
-        "type": 301
-      }, {
-        "source": "/blog",
-        "destination": "https://amando-vivir.web.app",
-        "type": 302
-      } ],
+      "redirects": [
+        {
+          "source": "/blog",
+          "destination": "https://amando-vivir.web.app",
+          "type": 302
+        }
+      ],
       "rewrites": [
         {
           "source": "**",
           "destination": "/404.html"
         }
-      ]
+      ],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=7200"
+            }
+          ]
+        },
+        {
+          "source": "404.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=300"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true
     }
-  ]
+  ],
+  "functions": {
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log"
+    ],
+    "source": "functions"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "database": {
+    "rules": "database.rules.json"
+  }
 }

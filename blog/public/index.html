@@ -52,7 +52,7 @@
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <p id="load">Firebase SDK Loading&hellip;</p>
+  <!--<p id="load">Firebase SDK Loading&hellip;</p>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -91,7 +91,7 @@
         loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
       }
     });
-  </script>
+  </script>-->
 
 <!-- Header -->
 <header id="header">
@@ -99,10 +99,10 @@
     <div class="container">
       <div class="row">
         <div class="intro-text">
-          <h1>Amando vivir</h1>
+          <h1>Amando vivir</h1> 
           <hr>
-          <p>Salud • Desarrollo personal • Arte</p>
-          <a href="#about" class="btn btn-default btn-lg page-scroll">Learn More</a> </div>
+          <p>Arte • Salud • Desarrollo personal</p>
+          <a href="#about" class="btn btn-default btn-lg page-scroll">Saber más</a> </div>
       </div>
     </div>
   </div>
@@ -120,9 +120,9 @@
         <ul class="nav navbar-nav">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a href="#page-top"></a> </li>
-          <li> <a class="page-scroll" href="#about">About</a> </li>
-          <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-          <li> <a class="page-scroll" href="#contact">Contact</a> </li>
+          <li> <a class="page-scroll" href="#about">Acerca de mí</a> </li>
+          <li> <a class="page-scroll" href="#blog">Blog</a> </li>
+          <li> <a class="page-scroll" href="#portfolio">Portafolio</a> </li>
         </ul>
       </div>
     </div>
@@ -132,35 +132,67 @@
 <div id="about">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>About Me</h2>
+      <h2>Acerca de mí</h2>
       <hr>
     </div>
     <div class="row">
-      <div class="col-md-12 text-center"><img src="img/about.jpg" class="img-responsive"></div>
+      <div class="col-md-12 text-center"><img src="img/amandovivir_Logo.png" class="img-responsive"></div>
       <div class="col-md-8 col-md-offset-2">
         <div class="about-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-          <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a> </div>
+          <p>La búsqueda de un propósito de vida me llevó a percatarme de que necesitaba algo más que dedicarme a "trabajar para sobrevivir" que necesitaba las cosas bonitas y los momentos simples de cada día, que necesitaba la danza, el arte.
+          Cada uno de nosotros siente ese llamado, a superarse, a crecer, a ser mejores, el punto es encontrar el área específica en la que ese deseo se convierte en propósito y, al final, en algo real.</p>
+          <p>Esta página está dedicada a exponer el proceso de transformación desde los inicios de mi preparación en el desarrollo del arte y el descubrimiento de mi amor por las artes escénicas, tal vez con errores y con la falta de técnica y belleza de un artista experimentado, pero siempre de todo corazón. 
+            Al mismo tiempo intento mostrar consejos de salud y disciplina que me han ayudado, así como esos pequeños motivadores que hacen mi vida más alegre.
+          </p>
+          <a href="#blog" class="btn btn-default btn-lg page-scroll">Blog</a> </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Contact Section -->
+<div id="blog" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Blog</h2>
+      <hr>
+    </div>
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="about-text">
+            <p>IMPORTANCIA DE LA CREATIVIDAD EN LA ACTUALIDAD</p>
+            <p>Desde principios de los tiempos el ser humano ha tenido que ser creativo, descubrió el fuego, la rueda, el lenguaje. Desarrolló la agricultura,
+               la ganadería, las artes. Todos esos descubrimientos y desarrollos fueron los precursores de un sin fin de descubrimientos y desarrollos más que han 
+               dado como resultado el desarrollo intelectual, artístico y tecnológico que conocemos en la actualidad. Si en el principio no había nada de lo conocemos, 
+               me refiero a herramientas, desarrollos, comodidades y objetos que utilizamos en nuestra vida diaria, ¿quiere decir esto que la creatividad es una característica 
+               intrínseca del ser humano? ¿Podemos de la nada desarrollar el todo? ¿Podemos, a pesar de las millones de ideas ya desarrolladas, continuar desarrollando
+                cosas nuevas? ¿Es el desarrollo actual algo ya determinado, como hablar del destino? ¿Qué habría pasado si en lugar de descubrir el fuego, se hubiese descubierto primero el poder del aire?...<a href="/blogEntry" class="page-scroll">Ver más</a> </div>
+            </p>
+            <a href="#portfolio" class="btn btn-default btn-lg page-scroll">Mi Portafolio</a> </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <!-- Portfolio Section -->
 <div id="portfolio">
   <div class="container">
     <div class="section-title text-center center">
-      <h2>Portfolio</h2>
+      <h2>Portafolio</h2>
       <hr>
     </div>
     <div class="categories">
       <ul class="cat">
         <li>
           <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".graphic">Graphic Design</a></li>
-            <li><a href="#" data-filter=".illustration">Illustration</a></li>
-            <li><a href="#" data-filter=".photography">Photography</a></li>
+            <li><a href="#" data-filter="*" class="active">Todos</a></li>
+            <li><a href="#" data-filter=".graphic">Expresión corporal</a></li>
+            <li><a href="#" data-filter=".illustration">Técnicas de actuación</a></li>
+            <li><a href="#" data-filter=".photography">Danza</a></li>
+            <li><a href="#" data-filter=".literature">Composiciones literarias</a></li>
           </ol>
         </li>
       </ul>
@@ -170,157 +202,62 @@
       <div class="portfolio-items">
         <div class="col-sm-6 col-md-3 col-lg-3 graphic">
           <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+            <div class="hover-bg"> <a href="/expresion" title="Project Title">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Expresión corporal</h4>
               </div>
-              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/expresion.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 illustration">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Técnicas de actuación</h4>
               </div>
-              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/tecnicas.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+        <div class="col-sm-6 col-md-3 col-lg-3 photography">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Danza</h4>
               </div>
-              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/danza.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
+        <div class="col-sm-6 col-md-3 col-lg-3 literature">
           <div class="portfolio-item">
             <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-                <h4>Project Title</h4>
+                <h4>Composiciones literarias</h4>
               </div>
-              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/literaria.jpg" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 photography">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 photography">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 illustration">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 photography">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/10-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/10-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 photography">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/11-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/11-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-3 col-lg-3 graphic">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="img/portfolio/12-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-              </div>
-              <img src="img/portfolio/12-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
 </div>
-<!-- Contact Section -->
+
 <div id="contact" class="text-center">
   <div class="container">
-    <div class="section-title center">
-      <h2>Get In Touch</h2>
-      <hr>
-    </div>
     <div class="col-md-8 col-md-offset-2">
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default btn-lg">Send Message</button>
-      </form>
       <div class="social">
         <ul>
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa fa-twitter"></i></a></li>
           <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
           <li><a href="#"><i class="fa fa-behance"></i></a></li>
+          <li><a href="/app"><i>Admin app</i></a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
+
 <div id="footer">
   <div class="container text-center">
     <div class="fnav">
